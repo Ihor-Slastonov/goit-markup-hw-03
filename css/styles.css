@@ -25,6 +25,16 @@ body {
   text-decoration: none;
 }
 .hide-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
   opacity: 0;
 }
 /* container */
@@ -86,7 +96,6 @@ ul {
   padding-bottom: 25px;
   margin-right: 93px;
 
-  
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -125,7 +134,6 @@ ul {
 .auth-nav {
   display: flex;
   margin-left: auto;
-
 }
 .auth-nav .link {
   display: block;
@@ -175,6 +183,9 @@ ul {
   cursor: pointer;
 }
 /* features */
+.features-list {
+  display: flex;
+}
 .features-title {
   margin-bottom: 10px;
 
@@ -218,7 +229,6 @@ ul {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
 }
 .logo-footer {
   font-family: Raleway, sans-serif;
