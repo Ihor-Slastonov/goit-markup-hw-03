@@ -45,14 +45,14 @@ body {
   padding: 0 15px;
   width: 1200px;
 
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 /* section */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section:nth-child(3n + 1) {
+.section:nth-child(4n) {
   background-color: var(--section-color);
 }
 
@@ -243,6 +243,9 @@ ul {
   padding-bottom: 60px;
 }
 .logo-footer {
+  display: block;
+  width: 145px;
+
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -260,14 +263,12 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-
   color: var(--white-color);
 }
 .address-list .link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-
   color: var(--address-link-color);
 }
 .address-list > .item {
@@ -275,12 +276,26 @@ ul {
 }
 /* Стили для portfolio.html */
 /* buttons */
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.buttons-list > .item {
+  margin-left: 8px;
+}
+.buttons-list > .item:first-child {
+  margin-left: 0;
+}
 .buttons {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-color: transparent;
+
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-
   background-color: var(--section-color);
   color: var(--title-text-color);
 }
@@ -292,15 +307,33 @@ ul {
   cursor: pointer;
 }
 /* cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.cards > .item {
+  margin-left: 30px;
+  margin-bottom: 30px;
+
+  outline: 1px solid var(--section-color);
+}
+
 .cards-tittle {
+  padding-top: 20px;
+  padding-left: 24px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
   color: var(--title-text-color);
 }
 .cards-text {
+  padding-left: 24px;
+  padding-bottom: 20px;
+
   font-size: 16px;
   line-height: 1.88;
 }
