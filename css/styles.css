@@ -11,8 +11,6 @@
 }
 
 body {
-  margin: auto;
-  width: 1600px;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
   background-color: var(--bg-color);
@@ -45,17 +43,12 @@ body {
   padding: 0 15px;
   width: 1200px;
 
-  /* outline: 1px solid tomato; */
+  outline: 1px solid tomato;
 }
 /* section */
 .section {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
-.section:nth-child(4n) {
-  background-color: var(--section-color);
-}
-
 /* Допустимы сброс стилей по ТЗ */
 h1,
 h2,
@@ -138,10 +131,13 @@ ul {
   background-color: var(--hero-bg-color);
 }
 .hero {
-  padding: 200px 452px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
 }
 .hero-title {
+  margin: 0 auto;
+  width: 696px;
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -210,9 +206,12 @@ ul {
   text-align: center;
   color: var(--title-text-color);
 }
-.team {
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--section-color);
 }
+
 .team-list {
   display: flex;
   justify-content: space-between;
@@ -221,9 +220,11 @@ ul {
   text-align: center;
   background-color: var(--bg-color);
 }
-
-.team-list .title {
+.team-list-text {
   padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team-list .title {
   padding-bottom: 10px;
 
   font-weight: 500;
@@ -232,7 +233,6 @@ ul {
   color: var(--title-text-color);
 }
 .team-list .text {
-  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
 }
@@ -275,6 +275,10 @@ ul {
 }
 /* Стили для portfolio.html */
 /* buttons */
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .buttons-list {
   display: flex;
   justify-content: center;
@@ -313,16 +317,16 @@ ul {
   margin-bottom: -30px;
 }
 .cards > .item {
+  width: 370px;
   margin-left: 30px;
   margin-bottom: 30px;
 
   outline: 1px solid var(--section-color);
 }
-
+.cards-text-box {
+  padding: 20px 24px;
+}
 .cards-tittle {
-  padding-top: 20px;
-  padding-left: 24px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -330,9 +334,6 @@ ul {
   color: var(--title-text-color);
 }
 .cards-text {
-  padding-left: 24px;
-  padding-bottom: 20px;
-
   font-size: 16px;
   line-height: 1.88;
 }
