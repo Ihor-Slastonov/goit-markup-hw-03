@@ -16,7 +16,10 @@ body {
   background-color: var(--bg-color);
   color: var(--primary-text-color);
 }
-
+img {
+  display: block;
+  max-width: 100%;
+}
 .lists {
   list-style: none;
 }
@@ -51,10 +54,16 @@ body {
 h1,
 h2,
 h3,
-p,
-ul {
+h4,
+h5,
+h6,
+p {
   margin: 0;
+}
+
+ul {
   padding: 0;
+  margin: 0;
 }
 /* header */
 .page-header {
@@ -322,11 +331,15 @@ ul {
   margin-left: 30px;
   margin-bottom: 30px;
 
-  outline: 1px solid var(--section-color);
+
+  /* outline: 1px solid var(--section-color); */
 }
 .cards-text-box {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
+
 .cards-tittle {
   margin-bottom: 4px;
 
